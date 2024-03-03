@@ -2,8 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Area;
+use App\Models\Category;
+use App\Models\Customer;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Property extends Model
 {
@@ -28,7 +31,7 @@ class Property extends Model
     }
     public function category()
     {
-        return $this->belongsTo(category::class , 'id','category_id');
+        return $this->belongsTo(Category::class , 'id','category_id');
     }
     public function Customer()
     {

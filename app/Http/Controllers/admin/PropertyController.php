@@ -53,7 +53,10 @@ class PropertyController extends Controller
         $property->customer_id = $request->customer_id;
         $property->area_id = $request->area_id;
         $property->category_id = $request->category_id;
-        $property->address = $request->address;
+        $property->address_ar = $request->address_ar;
+        $property->address_en = $request->address_en;
+        $property->description_en = $request->description_en;
+        $property->description_ar = $request->description_ar;
         $property->longitude = $request->longitude;
         $property->latitude = $request->latitude;
         $property->squaresmeters = $request->squaresmeters;
@@ -114,7 +117,10 @@ class PropertyController extends Controller
         $property->customer_id = $request->customer_id;
         $property->area_id = $request->area_id;
         $property->category_id = $request->category_id;
-        $property->address = $request->address;
+        $property->address_ar = $request->address_ar;
+        $property->address_en = $request->address_en;
+        $property->description_en = $request->description_en;
+        $property->description_ar = $request->description_ar;
         $property->longitude = $request->longitude;
         $property->latitude = $request->latitude;
         $property->squaresmeters = $request->squaresmeters;

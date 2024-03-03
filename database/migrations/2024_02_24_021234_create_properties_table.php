@@ -19,7 +19,10 @@ return new class extends Migration
             $table->foreignId('area_id')->constrained('areas');
             $table->foreignId('category_id')->constrained('categories');
             $table->string('main_photo');
-            $table->string('address');
+            $table->string('address_ar');
+            $table->string('address_en');
+            $table->longText('description_en');
+            $table->longText('description_ar');
             $table->double('longitude' , 10,6);
             $table->double('latitude' , 10,6);
             $table->integer('squaresmeters');
