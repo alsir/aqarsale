@@ -4,11 +4,12 @@ use App\Models\Area;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AreaController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\Auth\ProfileController;
-use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\Auth\ProfileController;
+use App\Http\Controllers\Auth\PhoneVerificationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,4 +45,6 @@ Route::prefix('admin')->middleware(['auth','web'])->group(function () {
     })->name('dashboard');
     
 });
+Route::post('send-verification-code', [PhoneVerificationController::class, 'sendVerificationCode']);
+Route::post('verify-phone-number', [PhoneVerificationController::class, 'verifyPhoneNumber']);
 require __DIR__ . '/auth.php';

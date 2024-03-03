@@ -2,12 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Property;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Customer extends Model
+
+class Customer extends Model implements Authenticatable
 {
-    use HasFactory;
+    use HasFactory, Notifiable, HasApiTokens;
     protected $fillable = [
         'name',
         'phone_number',
@@ -16,8 +21,9 @@ class Customer extends Model
     protected $hidden = [
         'password',
     ];
-    public function property()
+    public function properties()
     {
-        return $this->hasMany(Property::class );
+        return $this->hasMany(Property::class);
     }
+    
 }
