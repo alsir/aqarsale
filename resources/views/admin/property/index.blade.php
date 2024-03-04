@@ -93,24 +93,81 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="first-name-vertical">الاسم </label>
-                                        <input type="text" class="form-control @error('name') is-invalid @enderror"
-                                            name="name" placeholder="الاسم " value="{{ old('name') }}" required>
+                                        <label for="first-name-vertical">العنوان انجليزي </label>
+                                        <input type="text" class="form-control @error('address_en') is-invalid @enderror"
+                                            name="address_en" placeholder="العنوان انجليزي " value="{{ old('address_en') }}" required>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="first-name-vertical">رقم الهاتف</label>
-                                        <input type="text" class="form-control @error('phone_number') is-invalid @enderror"
-                                            name="phone_number" placeholder="رقم الهاتف" value="{{ old('phone_number') }}" required>
+                                        <label for="first-name-vertical">العنوان عربي</label>
+                                        <input type="text" class="form-control @error('address_ar') is-invalid @enderror"
+                                            name="address_ar" placeholder="العنوان عربي" value="{{ old('address_ar') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="email-id-vertical">وصف عربي</label>
+                                        <textarea \class="form-control @error('description_ar') is-invalid @enderror"
+                                            name="description_ar" placeholder="وصف عربي" value="{{ old('description_ar') }}"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="email-id-vertical">وصف انجليزي</label>
+                                        <textarea  class="form-control @error('description_en') is-invalid @enderror"
+                                            name="description_en" placeholder="وصف انجليزي" value="{{ old('description_en') }}"
+                                            required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="email-id-vertical">كلمة السر</label>
-                                        <input type="password" class="form-control @error('password') is-invalid @enderror"
-                                            name="password" placeholder="كلمة السر" value="{{ old('password') }}"
-                                            required>
+                                        <label for="first-name-vertical">احداثيات خط الطول</label>
+                                        <input type="number" class="form-control @error('longitude') is-invalid @enderror"
+                                            name="longitude" placeholder="احداثيات خط الطول" value="{{ old('longitude') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="first-name-vertical">احداثيات خط العرض  </label>
+                                        <input type="number" class="form-control @error('latitude') is-invalid @enderror"
+                                            name="latitude" placeholder="احداثيات خط العرض" value="{{ old('latitude') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="first-name-vertical"> المساحة بالمتر المربع  </label>
+                                        <input type="number" class="form-control @error('squaresmeters') is-invalid @enderror"
+                                            name="squaresmeters" placeholder="المساحة بالمتر المربع" value="{{ old('squaresmeters') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="first-name-vertical">  الطابق  </label>
+                                        <input type="number" class="form-control @error('level') is-invalid @enderror"
+                                            name="level" placeholder="الطابق " value="{{ old('level') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="first-name-vertical">  عدد الحمامات  </label>
+                                        <input type="number" class="form-control @error('bathrooms_number') is-invalid @enderror"
+                                            name="bathrooms_number" placeholder="عدد الحمامات" value="{{ old('bathrooms_number') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="first-name-vertical"> عدد غرف النوم  </label>
+                                        <input type="number" class="form-control @error('bedrooms_number') is-invalid @enderror"
+                                            name="bedrooms_number" placeholder="عدد غرف النوم" value="{{ old('bedrooms_number') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="first-name-vertical">  عدد هول  </label>
+                                        <input type="number" class="form-control @error('halls_number') is-invalid @enderror"
+                                            name="halls_number" placeholder="عدد هول" value="{{ old('halls_number') }}" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
