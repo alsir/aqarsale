@@ -10,6 +10,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\Auth\ProfileController;
 use App\Http\Controllers\Auth\PhoneVerificationController;
+use App\Http\Controllers\FrontendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ use App\Http\Controllers\Auth\PhoneVerificationController;
 | contains the "web" middleware group. Now create something great!
 |
  */
-Route::redirect('/', '/admin/login');
+Route::get('/', [FrontendController::class, 'index']);
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
