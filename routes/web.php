@@ -1,16 +1,15 @@
 <?php
 
-use App\Models\Area;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AreaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\Auth\ProfileController;
 use App\Http\Controllers\Auth\PhoneVerificationController;
-use App\Http\Controllers\FrontendController;
 
 /*
 |--------------------------------------------------------------------------

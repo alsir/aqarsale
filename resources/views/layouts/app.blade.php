@@ -107,54 +107,7 @@
                                                 <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">9 hours
                                                     ago</time></small>
                                         </div>
-                                    </a><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                        <div class="media d-flex align-items-start">
-                                            <div class="media-left"><i
-                                                    class="feather icon-download-cloud font-medium-5 success"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <h6 class="success media-heading red darken-1">99% Server load</h6>
-                                                <small class="notification-text">You got new order of goods.</small>
-                                            </div><small>
-                                                <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">5 hour
-                                                    ago</time></small>
-                                        </div>
-                                    </a><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                        <div class="media d-flex align-items-start">
-                                            <div class="media-left"><i
-                                                    class="feather icon-alert-triangle font-medium-5 danger"></i></div>
-                                            <div class="media-body">
-                                                <h6 class="danger media-heading yellow darken-3">Warning notifixation
-                                                </h6><small class="notification-text">Server have 99% CPU
-                                                    usage.</small>
-                                            </div><small>
-                                                <time class="media-meta"
-                                                    datetime="2015-06-11T18:29:20+08:00">Today</time></small>
-                                        </div>
-                                    </a><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                        <div class="media d-flex align-items-start">
-                                            <div class="media-left"><i
-                                                    class="feather icon-check-circle font-medium-5 info"></i></div>
-                                            <div class="media-body">
-                                                <h6 class="info media-heading">Complete the task</h6><small
-                                                    class="notification-text">Cake sesame snaps cupcake</small>
-                                            </div><small>
-                                                <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last
-                                                    week</time></small>
-                                        </div>
-                                    </a><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                        <div class="media d-flex align-items-start">
-                                            <div class="media-left"><i
-                                                    class="feather icon-file font-medium-5 warning"></i></div>
-                                            <div class="media-body">
-                                                <h6 class="warning media-heading">Generate monthly report</h6><small
-                                                    class="notification-text">Chocolate cake oat cake tiramisu
-                                                    marzipan</small>
-                                            </div><small>
-                                                <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last
-                                                    month</time></small>
-                                        </div>
-                                    </a>
+                                
                                 </li>
                                 <li class="dropdown-menu-footer"><a class="dropdown-item p-1 text-center"
                                         href="javascript:void(0)">قراءة كل الاشعارات</a></li>
@@ -213,24 +166,18 @@
                         href="/admin/dashboard"><i class="feather icon-home"></i><span class="menu-title"
                             data-i18n="Dashboard">الرئيسية</span></a>
                 </li>
-                <li class=" navigation-header"><span>القائمة</span>
+                <li class=" navigation-header"><span>المناطق و الفئات</span>
                 </li>
-                <li class="nav-item"><a href="#"><i class="feather icon-zap"></i><span class="menu-title"
-                            data-i18n="Starter kit">قائمة رئيسية</span></a>
-                    <ul class="menu-content">
-                        <li><a href="sk-layout-2-columns.html"><i></i><span class="menu-item"
-                                    data-i18n="2 columns">قائمة فرعية 1</span></a>
-                        </li>
-                        <li class=""><a href="sk-layout-fixed-navbar.html"><i></i><span class="menu-item"
-                                    data-i18n="Fixed navbar">قائمة فرعية 2</span></a>
-                        </li>
-                        <li><a href="sk-layout-floating-navbar.html"><i></i><span class="menu-item"
-                                    data-i18n="Floating navbar">قائمة فرعية 3</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" navigation-header"><span>الإعدادات</span>
-                </li>
+                <li class="nav-item {{ request()->is('admin/area') ? 'active' : '' }}"><a href="/admin/area"><i
+                    class="fa fa-stop"></i><span class="menu-title" data-i18n="Email">المناطق</span></a></li>
+                <li class="nav-item {{ request()->is('admin/category') ? 'active' : '' }}"><a href="/admin/category"><i
+                            class="fa fa-archive "></i><span class="menu-title" data-i18n="Email">الفئات</span></a></li>
+                <li class=" navigation-header"><span>العملاء و العقارات</span></li>
+                <li class="nav-item {{ request()->is('admin/customer') ? 'active' : '' }}"><a href="/admin/customer"><i
+                            class="fa fa-address-book"></i><span class="menu-title" data-i18n="Email">العملاء</span></a></li>
+                <li class="nav-item {{ request()->is('admin/property') ? 'active' : '' }}"><a href="/admin/property"><i
+                            class="fa fa-building"></i><span class="menu-title" data-i18n="Email">العقارات</span></a></li>
+                            <li class=" navigation-header"><span> اداؤة الموقع </span></li>
                 <li class="nav-item {{ request()->is('admin/users') ? 'active' : '' }}"><a href="/admin/users"><i
                             class="fa fa-lock"></i><span class="menu-title" data-i18n="Email">مدراء
                             النظام</span></a>

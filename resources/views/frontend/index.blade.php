@@ -4,34 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="offset-lg-1 col-lg-10">
-                <!-- Option bar start -->
-                {{-- <div class="option-bar">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-5 col-sm-5">
-                            <div class="sorting-options">
-                                <span class="title">View as:</span>
-                                <a href="list-view-3.html" class="change-view-btn active-view-btn"><i class="fa fa-th-list"></i></a>
-                                <a href="grid-view-3.html" class="change-view-btn"><i class="fa fa-th-large"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-7 col-sm-7">
-                            <div class="sorting-options2 d-flex">
-                                <span class="title">Order by:</span>
-                                <div class="sorting">
-                                    <select class="selectpicker search-fields" name="all-status">
-                                        <option>Price High to Low</option>
-                                        <option>Price: Low to High</option>
-                                        <option>Newest Properties</option>
-                                        <option>Oldest Properties</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-                <!-- Option bar end -->
-
-                <!-- Property box 2 start -->
+                      <!-- Property box 2 start -->
                 <div class="property-box-2">
                     <div class="row g-0">
                         <div class="col-lg-4 col-md-4">

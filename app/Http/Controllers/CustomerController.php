@@ -17,10 +17,10 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        $Customers = Customer::orderBy('id','Desc')->get();
+        $customers = Customer::orderBy('id','Desc')->get();
 
         return view('admin.customer.index')
-        ->with('Customer',$Customers);
+        ->with('customers',$customers);
     }
 
     /**

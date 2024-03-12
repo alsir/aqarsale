@@ -42,7 +42,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($propertys as $property)
+                                    @foreach ($properties as $property)
                                         <tr>
                                             <td>{{ $property->id }}</td>
                                             
@@ -108,7 +108,7 @@
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="email-id-vertical">وصف عربي</label>
-                                        <textarea \class="form-control @error('description_ar') is-invalid @enderror"
+                                        <textarea class="form-control @error('description_ar') is-invalid @enderror"
                                             name="description_ar" placeholder="وصف عربي" value="{{ old('description_ar') }}"
                                             required></textarea>
                                     </div>
