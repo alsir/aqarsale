@@ -115,9 +115,7 @@
                                 <div class="pull-left agent">
                                     <div class="agent">
                                         <div class="user">
-                                            <a href="#">
-                                                <img src="img/avatar/avatar-2.png" alt="avatar">
-                                            </a>
+                                            
                                         </div>
                                         <div class="user-name">
                                             <p><a href="#">Roy Tark</a></p>

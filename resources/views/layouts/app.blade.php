@@ -12,7 +12,7 @@
         content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
     <title>لوحة التحكم - @yield('title')</title>
-    <link rel="apple-touch-icon" href="{{ asset('/app-assets/images/ico/apple-icon-120.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('/frontend/img/logos/logo-2.png')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/app-assets/images/ico/favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
@@ -82,8 +82,7 @@
                                     German</a><a class="dropdown-item" href="#" data-language="pt"><i
                                         class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
                         </li>
-                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i
-                                    class="ficon feather icon-maximize"></i></a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"></a></li>
                         <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label"
                                 href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span
                                     class="badge badge-pill badge-primary badge-up">5</span></a>
@@ -149,7 +148,7 @@
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand"
-                        href="../../../html/rtl/vertical-menu-template/index.html">
+                        href="/">
                         <div class="brand-logo"></div>
                         <h2 class="brand-text mb-0">لوحة التحكم</h2>
                     </a></li>

@@ -22,6 +22,8 @@ use App\Http\Controllers\Auth\PhoneVerificationController;
 |
  */
 Route::get('/', [FrontendController::class, 'index']);
+Route::get('/map', [FrontendController::class, 'map']);
+Route::get('/details/{id}', [FrontendController::class,'details']);
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
