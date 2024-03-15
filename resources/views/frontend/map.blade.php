@@ -1,4 +1,4 @@
-@extends('frontend.layout.main')
+@extends((Session::get('locale') ==='ar'? 'frontend.layout.main_rtl' : 'frontend.layout.main'))
 @section('content')
 <div class="map-content content-area container-fluid">
     <div class="row" style="margin-top:7%;">

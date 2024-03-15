@@ -1,3 +1,5 @@
+@extends((Session::get('locale') ==='ar'? 'frontend.layout.main_rtl' : 'frontend.layout.main'))
+@section('content')
 <div class="my-properties content-area">
     <div class="container">
         <div class="row">
@@ -19,11 +21,6 @@
                          <li>
                              <a href="my-profile.html">
                                  <i class="flaticon-people"></i>My Profile
-                             </a>
-                         </li>
-                         <li>
-                             <a href="favorited-property.html">
-                                 <i class="flaticon-favorite"></i>Favorited Property
                              </a>
                          </li>
                          <li>
@@ -153,99 +150,10 @@
                              </tr>
                              </tbody>
                          </table>
-                         <table class="manage-table">
-                             <tbody>
-                             <tr>
-                                 <td class="listing-photoo">
-                                     <a href="single-property.html"><img alt="properties-small" src="img/properties/properties-4.png" class="img-fluid"></a>
-                                 </td>
-                                 <td class="title-container">
-                                     <h5><a href="#">Luxury Villa</a></h5>
-                                     <h6><span>$90.00</span> / monthly</h6>
-                                     <p><i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i> 123 Kathal St. Tampa City, </p>
-                                 </td>
-                                 <td class="date">
-                                     08.11.2021
-                                 </td>
-                                 <td class="action">
-                                     <ul>
-                                         <li>
-                                             <a href="#"><i class="fa fa-pencil"></i> Edit</a>
-                                         </li>
-                                         <li>
-                                             <a href="#"><i class="fa  fa-eye-slash"></i> Hide</a>
-                                         </li>
-                                         <li>
-                                             <a href="#" class="delete"><i class="fa fa-remove"></i> Delete</a>
-                                         </li>
-                                     </ul>
-                                 </td>
-                             </tr>
-                             </tbody>
-                         </table>
-                         <table class="manage-table">
-                             <tbody>
-                             <tr>
-                                 <td class="listing-photoo">
-                                     <a href="single-property.html"><img alt="properties-small" src="img/properties/properties-6.png" class="img-fluid"></a>
-                                 </td>
-                                 <td class="title-container">
-                                     <h5><a href="#">Luxury Villa</a></h5>
-                                     <h6><span>$90.00</span> / monthly</h6>
-                                     <p><i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i> 123 Kathal St. Tampa City, </p>
-                                 </td>
-                                 <td class="date">
-                                     08.11.2021
-                                 </td>
-                                 <td class="action">
-                                     <ul>
-                                         <li>
-                                             <a href="#"><i class="fa fa-pencil"></i> Edit</a>
-                                         </li>
-                                         <li>
-                                             <a href="#"><i class="fa  fa-eye-slash"></i> Hide</a>
-                                         </li>
-                                         <li>
-                                             <a href="#" class="delete"><i class="fa fa-remove"></i> Delete</a>
-                                         </li>
-                                     </ul>
-                                 </td>
-                             </tr>
-                             </tbody>
-                         </table>
-                         <table class="manage-table">
-                             <tbody>
-                             <tr>
-                                 <td class="listing-photoo">
-                                     <a href="single-property.html"><img alt="properties-small" src="img/properties/properties-5.png" class="img-fluid"></a>
-                                 </td>
-                                 <td class="title-container">
-                                     <h5><a href="#">Relaxing Apartment</a></h5>
-                                     <h6><span>$90.00</span> / monthly</h6>
-                                     <p><i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i> 123 Kathal St. Tampa City, </p>
-                                 </td>
-                                 <td class="date">
-                                     08.11.2021
-                                 </td>
-                                 <td class="action a-mb0">
-                                     <ul>
-                                         <li>
-                                             <a href="#"><i class="fa fa-pencil"></i> Edit</a>
-                                         </li>
-                                         <li>
-                                             <a href="#"><i class="fa  fa-eye-slash"></i> Hide</a>
-                                         </li>
-                                         <li>
-                                             <a href="#" class="delete"><i class="fa fa-remove"></i> Delete</a>
-                                         </li>
-                                     </ul>
-                                 </td>
-                             </tr>
-                             </tbody>
-                         </table>
                      </div>
                  </div>
             </div>
         </div>
     </div>
 </div>
+@endsection

@@ -1,0 +1,27 @@
+<?php
+
+return [
+        'area_en' => 'اسم المنطقة انجليزي',
+        'area_ar' => 'اسم المنطقة عربي',
+        'category_en' => 'الفئة انجليزي',
+        'category_ar' => 'الفئة عربي',
+        'name' => ' اسم العميل ',
+        'phone_number' => ' رقم الهاتف',
+        'property_id' => ' رقم العقار',
+        'url'=>'الصورة',
+        'customer_id'=>'رقم العميل',
+        'area_id'=>'رقم المنطقة',
+        'category_id'=>'رقم الفئة',
+        'main_photo'=>'الصورة الاساسية',
+        'address_ar'=>'العنوان عربي',
+        'address_en'=>'العنوان انجليزي',
+        'description_en'=>'الوصف انجليزي',
+        'description_ar'=>'الوصف عربي',
+        'longitude'=>'خط الطول',
+        'latitude'=>'خط العرض',
+        'squaresmeters'=>'المساحة ',
+        'bathrooms_number'=>'عدد الحمامات',
+        'bedrooms_number'=>'عدد غرف النوم',
+        'halls_number'=>'هول ',
+        'level'=>'الطابق',
+];

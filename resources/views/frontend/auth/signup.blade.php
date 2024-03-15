@@ -72,8 +72,7 @@
                         <div class="form-group clearfix">
                             <button type="submit" class="btn-md btn-theme w-100">Login</button>
                         </div>
-         
-                    </form>
+        
                         <a href="#" class="facebook-bg">
                             <i class="fa fa-facebook"></i>
                         </a>

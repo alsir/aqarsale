@@ -1,4 +1,4 @@
-@extends('frontend.layout.main')
+@extends((Session::get('locale') ==='ar'? 'frontend.layout.main_rtl' : 'frontend.layout.main'))
 @section('content')
 <!-- Sub banner start -->
 <div class="sub-banner">

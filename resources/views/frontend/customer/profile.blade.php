@@ -1,3 +1,5 @@
+@extends((Session::get('locale') ==='ar'? 'frontend.layout.main_rtl' : 'frontend.layout.main'))
+@section('content')
 <!-- Sub banner start -->
 <div class="sub-banner">
     <div class="container">
@@ -26,12 +28,6 @@
                 <!-- Avatar start -->
                 <div class="edit-profile-photo">
                     <img src="img/avatar/avatar-6.png" alt="profile-photo" class="img-fluid">
-                    <div class="change-photo-btn">
-                        <div class="photoUpload">
-                            <span><i class="fa fa-upload"></i> Upload Photo</span>
-                            <input type="file" class="upload">
-                        </div>
-                    </div>
                 </div>
                 <!-- Avatar end -->
                 <!-- My account box start -->
@@ -42,12 +38,6 @@
                                 <i class="flaticon-people"></i>My Profile
                             </a>
                         </li>
-                        <li>
-                            <a href="favorited-property.html">
-                                <i class="flaticon-favorite"></i>Favorited Property
-                            </a>
-                        </li>
-                        <li>
                             <a href="my-property.html">
                                 <i class="flaticon-internet"></i>My Property
                             </a>
@@ -105,3 +95,4 @@
     </div>
 </div>
 <!-- My profile end -->
+@endsection

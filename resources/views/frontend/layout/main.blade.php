@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <title>عقار سيل </title>
+    <title> Aqar Sales </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
@@ -52,7 +52,7 @@
 
 <!-- Top header 3 start -->
 <!-- Top header start -->
-<header class="top-header th10 d-none d-lg-block d-md-block" id="top-header-1" style=" background-color: #0d6efd;">
+{{-- <header class="top-header th10 d-none d-lg-block d-md-block" id="top-header-1" style=" background-color: #0d6efd;">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-7 col-7">
@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-</header>
+</header> --}}
 <!-- Top header end -->
 
 <!-- Main header start -->
