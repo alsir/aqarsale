@@ -206,9 +206,17 @@
 <script  src="{{ asset('/frontend/js/jquery.easing.1.3.js')}}"></script>
 <script  src="{{ asset('/frontend/js/jquery.scrollUp.js')}}"></script>
 <script  src="{{ asset('/frontend/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
-<script  src="{{ asset('/frontend/js/leaflet.js')}}"></script>
-<script  src="{{ asset('/frontend/js/leaflet-providers.js')}}"></script>
-<script  src="{{ asset('/frontend/js/leaflet.markercluster.js')}}"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
+   <script>
+   var map = L.map('map').setView([29.342274585850735, 48.01916934758884], 13);
+   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+    }).addTo(map);
+    // var marker = L.marker([29.342274585850735, 48.01916934758884]).addTo(map);
+</script>
 <script  src="{{ asset('/frontend/js/dropzone.js')}}"></script>
 <script  src="{{ asset('/frontend/js/slick.min.js')}}"></script>
 <script  src="{{ asset('/frontend/js/jquery.filterizr.js')}}"></script>
