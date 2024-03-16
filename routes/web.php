@@ -33,6 +33,12 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('frontend.auth.signup');
 })->name('signup');
+Route::get('/profile', function () {
+    return view('frontend.customer.profile');
+})->name('pro');
+Route::get('/customer', function () {
+    return view('frontend.customer.properties');
+})->name('property');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

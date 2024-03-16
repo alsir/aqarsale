@@ -6,7 +6,7 @@
              <div class="col-lg-4 col-md-12 col-sm-12">
                  <!-- Avatar start -->
                  <div class="edit-profile-photo">
-                     <img src="img/avatar/avatar-6.png" alt="profile-photo" class="img-fluid">
+                     <img src="{{ asset('/frontend/img/avatar/avatar-6.png')}}" alt="profile-photo" class="img-fluid">
                      <div class="change-photo-btn">
                          <div class="photoUpload">
                              <span><i class="fa fa-upload"></i> Upload Photo</span>
@@ -63,71 +63,10 @@
                              <tbody class="responsive-table">
                              <tr>
                                  <td class="listing-photoo h-pt-0">
-                                     <a href="single-property.html"><img alt="properties-small" src="img/properties/properties-1.png" class="img-fluid"></a>
+                                     <a href="single-property.html"><img alt="properties-small" src="{{ asset('/frontend/img/properties/properties-1.png')}}" class="img-fluid"></a>
                                  </td>
                                  <td class="title-container">
                                      <h5><a href="#">Real Luxury Villa</a></h5>
-                                     <h6><span>$90.00</span> / monthly</h6>
-                                     <p><i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i> 123 Kathal St. Tampa City, </p>
-                                 </td>
-                                 <td class="date">
-                                     08.11.2021
-                                 </td>
-                                 <td class="action">
-                                     <ul>
-                                         <li>
-                                             <a href="#"><i class="fa fa-pencil"></i> Edit</a>
-                                         </li>
-                                         <li>
-                                             <a href="#"><i class="fa  fa-eye-slash"></i> Hide</a>
-                                         </li>
-                                         <li>
-                                             <a href="#" class="delete"><i class="fa fa-remove"></i> Delete</a>
-                                         </li>
-                                     </ul>
-                                 </td>
-                             </tr>
-                             </tbody>
-                         </table>
-
-                         <table class="manage-table">
-                             <tbody>
-                             <tr>
-                                 <td class="listing-photoo">
-                                     <a href="single-property.html"><img alt="properties-small" src="img/properties/properties-2.png" class="img-fluid"></a>
-                                 </td>
-                                 <td class="title-container">
-                                     <h5><a href="#">Luxury Villa</a></h5>
-                                     <h6><span>$90.00</span> / monthly</h6>
-                                     <p><i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i> 123 Kathal St. Tampa City, </p>
-                                 </td>
-                                 <td class="date">
-                                     08.11.2021
-                                 </td>
-                                 <td class="action">
-                                     <ul>
-                                         <li>
-                                             <a href="#"><i class="fa fa-pencil"></i> Edit</a>
-                                         </li>
-                                         <li>
-                                             <a href="#"><i class="fa  fa-eye-slash"></i> Hide</a>
-                                         </li>
-                                         <li>
-                                             <a href="#" class="delete"><i class="fa fa-remove"></i> Delete</a>
-                                         </li>
-                                     </ul>
-                                 </td>
-                             </tr>
-                             </tbody>
-                         </table>
-                         <table class="manage-table">
-                             <tbody>
-                             <tr>
-                                 <td class="listing-photoo">
-                                     <a href="single-property.html"><img alt="properties-small" src="img/properties/properties-3.png" class="img-fluid"></a>
-                                 </td>
-                                 <td class="title-container">
-                                     <h5><a href="#">Relaxing Apartment</a></h5>
                                      <h6><span>$90.00</span> / monthly</h6>
                                      <p><i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i> 123 Kathal St. Tampa City, </p>
                                  </td>

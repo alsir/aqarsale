@@ -72,18 +72,14 @@
                         <div class="form-group clearfix">
                             <button type="submit" class="btn-md btn-theme w-100" style="background-color:blue;">Login</button>
                         </div>
-                        <div class="extra-login clearfix">
-                            <span>Or Login With</span>
-                        </div>
                     </form>
                     <div class="clearfix"></div>
-                    <p>Already a member? <a href="login.html">Login here</a></p>
+                    <p>Already a member? <a href="/login">Login here</a></p>
                 </div>
             </div>
             <div class="col-lg-6 bg-color-15 pad-0 none-992 bg-img">
                 <div class="info clearfix">
                     <h1>Welcome to <span>Aqar sales </span></h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type unknown printer took a galley of type and scrambled </p>
                 </div>
             </div>
         </div>

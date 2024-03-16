@@ -27,7 +27,7 @@
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <!-- Avatar start -->
                 <div class="edit-profile-photo">
-                    <img src="img/avatar/avatar-6.png" alt="profile-photo" class="img-fluid">
+                    <img src="{{ asset('/frontend/img/avatar/avatar-6.png')}}" alt="profile-photo" class="img-fluid">
                 </div>
                 <!-- Avatar end -->
                 <!-- My account box start -->
@@ -38,6 +38,7 @@
                                 <i class="flaticon-people"></i>My Profile
                             </a>
                         </li>
+                        <li>
                             <a href="my-property.html">
                                 <i class="flaticon-internet"></i>My Property
                             </a>
@@ -71,22 +72,10 @@
                             <input type="text" name="your-name" class="form-control" id="inputname1" placeholder="John Antony">
                         </div>
                         <div class="form-group">
-                            <label for="inputtitle1" class="form-label">Your Title</label>
-                            <input type="text" name="your-title" class="form-control" id="inputtitle1" placeholder="Your Title">
-                        </div>
-                        <div class="form-group">
                             <label for="inputphone1" class="form-label">Phone Number</label>
                             <input type="text" name="your-title" class="form-control" id="inputphone1" placeholder="Phone Number">
                         </div>
-                        <div class="form-group">
-                            <label for="inputEmail1" class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" id="inputEmail1" placeholder="johndoe@gmail.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1" class="form-label">Personal Info</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Personal Info"></textarea>
-                        </div>
-                        <a href="#" class="btn-4 btn-round-3">Save Changes</a>
+                        <a href="#" class="btn-4 btn-round-3" style="background-color: blue;">Save Changes</a>
                     </form>
                 </div>
                 <!-- My address end -->
