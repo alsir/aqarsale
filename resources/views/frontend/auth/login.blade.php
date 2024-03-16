@@ -47,7 +47,7 @@
         <div class="row login-box">
             <div class="col-lg-6 align-self-center pad-0 form-section">
                 <div class="form-inner">
-                    <a href="index.html" class="logo">
+                    <a href="/" class="logo">
                         <img src="{{ asset('/frontend/img/logos/Full Logo.png')}}" alt="logo">
                     </a>
                     <h3>Sign into your account</h3>
@@ -68,7 +68,7 @@
                             <a href="forgot-password.html" class="link-light float-end forgot-password">Forgot your password?</a>
                         </div>
                         <div class="form-group clearfix">
-                            <button type="submit" class="btn-md btn-theme w-100">Login</button>
+                            <button type="submit" class="btn-md btn-theme w-100" style="background-color:blue;">Login</button>
                         </div>
                     </form>
                     <div class="clearfix"></div>
