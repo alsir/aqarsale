@@ -50,35 +50,33 @@
                     <a href="/" class="logo">
                         <img src="{{ asset('/frontend/img/logos/Full Logo.png')}}" alt="logo">
                     </a>
-                    <h3>Sign into your account</h3>
+                    <h3>{{__('frontend.sign_into_your_account')}}</h3>
                     <form action="#" method="GET">
                         <div class="form-group clearfix">
-                            <input name="phone_number" type="tel" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+                            <input name="phone_number" type="tel" class="form-control" placeholder="{{__('frontend.phone_number')}}" aria-label="Phone Number">
                         </div>
                         <div class="form-group clearfix">
-                            <input name="password" type="password" class="form-control" placeholder="Password" aria-label="Password">
+                            <input name="password" type="password" class="form-control" placeholder="{{__('frontend.password')}}" aria-label="Password">
                         </div>
                         <div class="checkbox form-group clearfix">
                             <div class="form-check float-start">
                                 <input class="form-check-input" type="checkbox" id="rememberme">
                                 <label class="form-check-label" for="rememberme">
-                                    Remember me
+                                    {{__('frontend.remember_m_accounte')}}
                                 </label>
                             </div>
-                            <a href="forgot-password.html" class="link-light float-end forgot-password">Forgot your password?</a>
                         </div>
                         <div class="form-group clearfix">
-                            <button type="submit" class="btn-md btn-theme w-100" style="background-color:blue;">Login</button>
+                            <button type="submit" class="btn-md btn-theme w-100" style="background-color:blue;">{{__('frontend.login')}}</button>
                         </div>
                     </form>
                     <div class="clearfix"></div>
-                    <p>Don't have an account? <a href="signup.html" class="thembo"> Register here</a></p>
+                    <p>{{__('frontend.donot_have')}}<a href="signup.html" class="thembo"> {{__('frontend.register_here')}}</a></p>
                 </div>
             </div>
             <div class="col-lg-6 bg-color-15 pad-0 none-992 bg-img">
                 <div class="info clearfix">
-                    <h1>Welcome to <span>ِAqar Sales</span></h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type unknown printer took a galley of type and scrambled </p>
+                    {{-- <h1>Welcome to <span>ِAqar Sales</span></h1> --}}
                 </div>
             </div>
         </div>

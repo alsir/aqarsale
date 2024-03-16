@@ -8,56 +8,52 @@
                  <div class="edit-profile-photo">
                      <img src="{{ asset('/frontend/img/avatar/avatar-6.png')}}" alt="profile-photo" class="img-fluid">
                      <div class="change-photo-btn">
-                         <div class="photoUpload">
-                             <span><i class="fa fa-upload"></i> Upload Photo</span>
-                             <input type="file" class="upload">
-                         </div>
                      </div>
                  </div>
                  <!-- Avatar end -->
                  <!-- My account box start -->
                  <div class="my-account-box">
-                     <ul>
-                         <li>
-                             <a href="my-profile.html">
-                                 <i class="flaticon-people"></i>My Profile
-                             </a>
-                         </li>
-                         <li>
-                             <a href="my-property.html" class="active">
-                                 <i class="flaticon-internet"></i>My Property
-                             </a>
-                         </li>
-                         <li>
-                             <a href="submit-property.html">
-                                 <i class="flaticon-cross"></i>Submit New Property
-                             </a>
-                         </li>
-                         <li>
-                             <a href="change-password.html">
-                                 <i class="flaticon-lock"></i>Change Password
-                             </a>
-                         </li>
-                         <li>
-                             <a href="index.html">
-                                 <i class="flaticon-exit"></i>Log Out
-                             </a>
-                         </li>
-                     </ul>
+                    <ul>
+                        <li>
+                            <a href="my-profile.html" class="active">
+                                <i class="flaticon-people"></i>{{__('frontend.my_profile')}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-property.html">
+                                <i class="flaticon-internet"></i>{{__('frontend.my_property')}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="submit-property.html">
+                                <i class="flaticon-cross"></i>{{__('frontend.submit_new_property')}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="change-password.html">
+                                <i class="flaticon-lock"></i>{{__('frontend.change_password')}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="flaticon-exit"></i>{{__('frontend.log_out')}}
+                            </a>
+                        </li>
+                    </ul>
                  </div>
                  <!-- My account box end -->
             </div>
              <div class="col-lg-8 col-md-12 col-sm-12">
                  <div class="my-address">
-                     <h3 class="heading-2">My Property</h3>
+                     <h3 class="heading-2">{{__('frontend.my_property')}}</h3>
                      <div class="my-properties">
                          <table class="manage-table">
                              <thead>
                              <tr>
-                                 <th>My Property</th>
+                                 <th>{{__('frontend.my_property')}}</th>
                                  <th></th>
-                                 <th>Date</th>
-                                 <th>Actions</th>
+                                 <th>{{__('frontend.date')}}</th>
+                                 <th>{{__('frontend.actions')}}</th>
                              </tr>
                              </thead>
                              <tbody class="responsive-table">
@@ -76,13 +72,10 @@
                                  <td class="action">
                                      <ul>
                                          <li>
-                                             <a href="#"><i class="fa fa-pencil"></i> Edit</a>
+                                             <a href="#"><i class="fa fa-pencil"></i> {{__('frontend.edit')}}</a>
                                          </li>
                                          <li>
-                                             <a href="#"><i class="fa  fa-eye-slash"></i> Hide</a>
-                                         </li>
-                                         <li>
-                                             <a href="#" class="delete"><i class="fa fa-remove"></i> Delete</a>
+                                             <a href="#" class="delete"><i class="fa fa-remove"></i> {{__('frontend.delete')}}</a>
                                          </li>
                                      </ul>
                                  </td>

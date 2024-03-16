@@ -44,9 +44,6 @@
                                     <li>
                                         <i class="flaticon-square"></i> Sq Ft:3400
                                     </li>
-                                    <li>
-                                        <i class="flaticon-vehicle"></i> 1 Garage
-                                    </li>
                                 </ul>
                             </div>
                             <div class="footer clearfix">
@@ -105,9 +102,6 @@
                                     </li>
                                     <li>
                                         <i class="flaticon-square"></i> Sq Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-vehicle"></i> 1 Garage
                                     </li>
                                 </ul>
                             </div>
