@@ -7,6 +7,7 @@ use App\Http\Controllers\ImageController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\Auth\ProfileController;
 use App\Http\Controllers\Auth\PhoneVerificationController;
@@ -24,6 +25,7 @@ use App\Http\Controllers\Auth\PhoneVerificationController;
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/map', [FrontendController::class, 'map']);
 Route::get('/details/{id}', [FrontendController::class,'details']);
+Route::get('change_language/{lang}' , [LanguageController::class , 'change']);
 Route::get('/details', function () {
     return view('frontend.details');
 })->name('details');

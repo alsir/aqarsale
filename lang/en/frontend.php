@@ -41,4 +41,9 @@ return [
         'register_here'=>'Register here',
         'login'=>'Login',
         'actions'=>'Actions',
+        'create_an_account'=>'Create an account',
+        'agree_to_term'=>'I agree to the terms of service',
+        'login_here'=>'Login here',
+        'register_here'=>'Register here',
+        'already_a_member'=>'Already a member?',
 ];

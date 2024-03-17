@@ -16,34 +16,34 @@
                     <ul>
                         <li>
                             <a href="my-profile.html" class="active">
-                                <i class="flaticon-people"></i>{{__('frontend.my_profile')}}
+                                <i class="flaticon-people " style="margin-left: 2%"></i>{{__('frontend.my_profile')}}
                             </a>
                         </li>
                         <li>
                             <a href="my-property.html">
-                                <i class="flaticon-internet"></i>{{__('frontend.my_property')}}
+                                <i class="flaticon-internet " style="margin-left: 2%"></i>{{__('frontend.my_property')}}
                             </a>
                         </li>
                         <li>
                             <a href="submit-property.html">
-                                <i class="flaticon-cross"></i>{{__('frontend.submit_new_property')}}
+                                <i class="flaticon-cross " style="margin-left: 2%"></i>{{__('frontend.submit_new_property')}}
                             </a>
                         </li>
                         <li>
                             <a href="change-password.html">
-                                <i class="flaticon-lock"></i>{{__('frontend.change_password')}}
+                                <i class="flaticon-lock " style="margin-left: 2%"></i>{{__('frontend.change_password')}}
                             </a>
                         </li>
                         <li>
                             <a href="index.html">
-                                <i class="flaticon-exit"></i>{{__('frontend.log_out')}}
+                                <i class="flaticon-exit " style="margin-left: 2%"></i>{{__('frontend.log_out')}}
                             </a>
                         </li>
                     </ul>
                  </div>
                  <!-- My account box end -->
             </div>
-             <div class="col-lg-8 col-md-12 col-sm-12">
+             <div class="col-lg-8 col-md-12 col-sm-12 mt-5">
                  <div class="my-address">
                      <h3 class="heading-2">{{__('frontend.my_property')}}</h3>
                      <div class="my-properties">

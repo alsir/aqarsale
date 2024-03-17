@@ -1,7 +1,7 @@
 @extends((Session::get('locale') ==='ar'? 'frontend.layout.main_rtl' : 'frontend.layout.main'))
 @section('content')
 <!-- Sub banner start -->
-<div class="sub-banner" style="margin-top:7%;">
+<div class="sub-banner">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6">

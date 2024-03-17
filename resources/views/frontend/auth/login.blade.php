@@ -38,7 +38,11 @@
     <script  src="{{ asset('/frontend/js/respond.min.js')}}"></script>
     <![endif]-->
 </head>
-<body>
+@if(Session::get('locale')=="ar")
+<body style="direction: rtl">
+@else
+<body style="direction: ltr">
+@endif
 <div class="page_loader"></div>
 
 <!-- Login section start -->
@@ -47,16 +51,16 @@
         <div class="row login-box">
             <div class="col-lg-6 align-self-center pad-0 form-section">
                 <div class="form-inner">
-                    <a href="/" class="logo">
-                        <img src="{{ asset('/frontend/img/logos/Full Logo.png')}}" alt="logo">
-                    </a>
+                    
+                        <img src="{{ asset('/frontend/img/logos/Full Logo.png')}}" alt="logo" style="margin-bottom:5%;">
+                    
                     <h3>{{__('frontend.sign_into_your_account')}}</h3>
                     <form action="#" method="GET">
                         <div class="form-group clearfix">
-                            <input name="phone_number" type="tel" class="form-control" placeholder="{{__('frontend.phone_number')}}" aria-label="Phone Number">
+                            <input name="phone_number" type="number" class="form-control" placeholder="{{__('frontend.phone_number')}}" aria-label="Phone Number">
                         </div>
                         <div class="form-group clearfix">
-                            <input name="password" type="password" class="form-control" placeholder="{{__('frontend.password')}}" aria-label="Password">
+                            <input name="password" type="password" class="form-control" placeholder="{{__('frontend.password')}}"  aria-label="Password">
                         </div>
                         <div class="checkbox form-group clearfix">
                             <div class="form-check float-start">

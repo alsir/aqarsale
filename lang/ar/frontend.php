@@ -6,6 +6,7 @@ return [
         'category_en' => 'الفئة انجليزي',
         'category_ar' => 'الفئة عربي',
         'name' => ' اسم العميل ',
+        'password' => 'كلمة المرور',
         'phone_number' => ' رقم الهاتف',
         'property_id' => ' رقم العقار',
         'url'=>'الصورة',
@@ -43,4 +44,9 @@ return [
         'register_here'=>'سجل هنا',
         'login'=>'تسجيل دخول',
         'actions'=>'افعال',
+        'create_an_account'=>'تسجيل حساب ',
+        'agree_to_term'=>'انا اوافق على شروط الخدمة',
+        'login_here'=>'تسجيل دخول هنا',
+        'register_here'=>'تسجيل هنا',
+        'already_a_member'=>'عضوا فعلا؟',
 ];

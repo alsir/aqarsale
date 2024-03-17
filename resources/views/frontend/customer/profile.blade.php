@@ -35,27 +35,27 @@
                     <ul>
                         <li>
                             <a href="my-profile.html" class="active">
-                                <i class="flaticon-people"></i>{{__('frontend.my_profile')}}
+                                <i class="flaticon-people " style="margin-left: 2%"></i>{{__('frontend.my_profile')}}
                             </a>
                         </li>
                         <li>
                             <a href="my-property.html">
-                                <i class="flaticon-internet"></i>{{__('frontend.my_property')}}
+                                <i class="flaticon-internet " style="margin-left: 2%"></i>{{__('frontend.my_property')}}
                             </a>
                         </li>
                         <li>
                             <a href="submit-property.html">
-                                <i class="flaticon-cross"></i>{{__('frontend.submit_new_property')}}
+                                <i class="flaticon-cross " style="margin-left: 2%"></i>{{__('frontend.submit_new_property')}}
                             </a>
                         </li>
                         <li>
                             <a href="change-password.html">
-                                <i class="flaticon-lock"></i>{{__('frontend.change_password')}}
+                                <i class="flaticon-lock " style="margin-left: 2%"></i>{{__('frontend.change_password')}}
                             </a>
                         </li>
                         <li>
                             <a href="index.html">
-                                <i class="flaticon-exit"></i>{{__('frontend.log_out')}}
+                                <i class="flaticon-exit " style="margin-left: 2%"></i>{{__('frontend.log_out')}}
                             </a>
                         </li>
                     </ul>
@@ -75,7 +75,7 @@
                             <label for="inputphone1" class="form-label">{{__('frontend.phone_number')}}</label>
                             <input type="text" name="your-title" class="form-control" id="inputphone1" placeholder="{{__('frontend.phone_number')}}">
                         </div>
-                        <a href="#" class="btn-4 btn-round-3" style="background-color: blue;">{{__('frontend.save_change')}}"></a>
+                        <a href="#" class="btn-4 btn-round-3" style="background-color: blue;">{{__('frontend.save_change')}}</a>
                     </form>
                 </div>
                 <!-- My address end -->

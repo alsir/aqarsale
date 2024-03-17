@@ -38,7 +38,11 @@
         <script  src="{{ asset('/frontend/js/respond.min.js')}}"></script>
         <![endif]-->
     </head>
-<body>
+@if(Session::get('locale')=="ar")
+<body style="direction: rtl">
+@else
+<body style="direction: ltr">
+@endif
 <div class="page_loader"></div>
 
 <!-- Login section start -->
@@ -47,39 +51,36 @@
         <div class="row login-box">
             <div class="col-lg-6 align-self-center pad-0 form-section">
                 <div class="form-inner">
-                    <a href="index.html" class="logo">
-                        <img src="img/logos/logo.png" alt="logo">
-                    </a>
-                    <h3>Create an account</h3>
+                    <img src="{{ asset('/frontend/img/logos/Full Logo.png')}}" alt="logo">
+                    <h3 class="mt-3">{{__('frontend.create_an_account')}}</h3>
                     <form action="#" method="GET">
                         <div class="form-group clearfix">
-                            <input name="name" type="text" class="form-control" placeholder="Full Name" aria-label="Full Name">
+                            <input name="name" type="text" class="form-control" placeholder="{{__('frontend.name')}}" aria-label="Full Name">
                         </div>
                         <div class="form-group clearfix">
-                            <input name="email" type="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
+                            <input name="email" type="number" class="form-control" placeholder="{{__('frontend.phone_number')}}" aria-label="Email Address">
                         </div>
                         <div class="form-group clearfix">
-                            <input name="password" type="password" class="form-control" placeholder="Password" aria-label="Password">
+                            <input name="password" type="password" class="form-control" placeholder="{{__('frontend.password')}}" aria-label="Password">
                         </div>
-                        <div class="form-group clearfix checkbox">
+                        <div class="form-group clearfix checkbox" style="direction: ltr;">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="rememberme">
                                 <label class="form-check-label" for="rememberme">
-                                    I agree to the terms of service
+                                    {{__('frontend.agree_to_term')}}
                                 </label>
                             </div>
                         </div>
                         <div class="form-group clearfix">
-                            <button type="submit" class="btn-md btn-theme w-100" style="background-color:blue;">Login</button>
+                            <button type="submit" class="btn-md btn-theme w-100" style="background-color:blue;">{{__('frontend.login')}}</button>
                         </div>
                     </form>
                     <div class="clearfix"></div>
-                    <p>Already a member? <a href="/login">Login here</a></p>
+                    <p>{{__('frontend.already_a_member')}} <a href="/login">{{__('frontend.login_here')}}</a></p>
                 </div>
             </div>
             <div class="col-lg-6 bg-color-15 pad-0 none-992 bg-img">
                 <div class="info clearfix">
-                    <h1>Welcome to <span>Aqar sales </span></h1>
                 </div>
             </div>
         </div>

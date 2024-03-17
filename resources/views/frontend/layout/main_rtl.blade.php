@@ -29,7 +29,9 @@
     <link rel="shortcut icon" href="{{ asset('/frontend/img/logos/App Icon.png')}}" type="image/x-icon" >
 
     <!-- Google fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -47,7 +49,7 @@
     <script  src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body style="direction: rtl;">
 <div class="page_loader"></div>
 
 <!-- Top header 3 start -->
@@ -89,16 +91,16 @@
             <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href=""  class="nav-link submit-property " ><i class="fa fa-map"></i> Search by map</a>
+                        <a href=""  class="nav-link submit-property " > ابحث بالخريطة <i class="fa fa-map"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href=""  class="nav-link submit-property "><i class="fa fa-calculator"></i> Calculate Cost</a>
+                        <a href=""  class="nav-link submit-property "> حاسب التكلفة <i class="fa fa-calculator"></i></a>
                     </li>
                     <li class="nav-item">
                         <a href=""  class="nav-link submit-property "><i class="fa fa-user"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="submit-property.html" class="nav-link submit-property btn-5" style=" background-color: #0d6efd; color:aliceblue;"> <i class="fa fa-plus"></i>Submit Property</a>
+                        <a href="submit-property.html" class="nav-link submit-property btn-5" style=" background-color: #0d6efd; color:aliceblue;">اضافة عقار  <i class="fa fa-plus"></i> </a>
                     </li>
                 </ul>
             </div>
