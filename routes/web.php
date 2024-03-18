@@ -26,6 +26,9 @@ Route::get('/', [FrontendController::class, 'index']);
 Route::get('/map', [FrontendController::class, 'map']);
 Route::get('/details/{id}', [FrontendController::class,'details']);
 Route::get('change_language/{lang}' , [LanguageController::class , 'change']);
+Route::get('/sublite', function () {
+    return view('frontend.submit_property');
+})->name('details');
 Route::get('/details', function () {
     return view('frontend.details');
 })->name('details');
