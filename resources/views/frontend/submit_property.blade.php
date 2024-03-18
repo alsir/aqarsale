@@ -1,7 +1,7 @@
 @extends((Session::get('locale') ==='ar'? 'frontend.layout.main_rtl' : 'frontend.layout.main'))
 @section('content')
 <!-- Sub banner start -->
-<div class="sub-banner">
+<div class="sub-banner" style="margin-top: 7%;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6">
@@ -109,9 +109,17 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row mb-50">
+                                <div class="col-md-12">
+                                    <div class="form-group mb-0">
+                                        <label>Detailed Information</label>
+                                        <textarea name="message" class="form-control" rows="3" placeholder="Detailed Information"></textarea>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-lg-4 col-md-12 col-sm-12">
-                                    <a href="#" class="btn-4 btn-round-3" style="background-color: blue;">Submit Property</a>
+                                    <a href="#" class="btn-4 btn-round-3" style="background-color: #0d6efd;">Submit Property</a>
                                 </div>
                             </div>
                         </form>

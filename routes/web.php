@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AreaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ImageController;
+use App\Http\Middleware\RedirectIfNotUser;
+use App\Http\Middleware\RedirectIfNotAdmin;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\FrontendController;
@@ -22,6 +24,7 @@ use App\Http\Controllers\Auth\PhoneVerificationController;
 | contains the "web" middleware group. Now create something great!
 |
  */
+Route::group(['middleware' => ['auth', RedirectIfNotUser::class]],function(){});
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/map', [FrontendController::class, 'map']);
 Route::get('/details/{id}', [FrontendController::class,'details']);
@@ -49,7 +52,7 @@ Route::get('/customer', function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
 
-Route::prefix('admin')->middleware(['auth','web'])->group(function () {
+Route::prefix('admin')->group(['middleware' => ['auth:admin', RedirectIfNotAdmin::class]],function () {
 
     Route::get('/edit_profile',[ProfileController::class,'edit_profile']);
     Route::post('/update_profile',[ProfileController::class,'update_profile']);
