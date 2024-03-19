@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Area;
 use App\Models\Category;
+use App\Models\Customer;
 use App\Models\Property;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FrontendController extends Controller
 {
@@ -53,6 +55,18 @@ class FrontendController extends Controller
         return view('frontend.map')
         ->with('areas', $areas)
         ->with('categories', $categories)
+        ->with('properties', $properties);
+    }
+    public function profile()
+    {
+        $cutomer= Customer::where('id' , Auth::id())->get();
+        return view('frontend.customer.profile')
+        ->with('cutomer', $cutomer);
+    }
+    public function properties()
+    {
+        $properties= Property::where('customer_id' , Auth::id())->get();
+        return view('frontend.customer.profile')
         ->with('properties', $properties);
     }
 

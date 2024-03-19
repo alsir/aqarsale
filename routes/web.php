@@ -24,29 +24,15 @@ use App\Http\Controllers\Auth\PhoneVerificationController;
 | contains the "web" middleware group. Now create something great!
 |
  */
-Route::group(['middleware' => ['auth', RedirectIfNotUser::class]],function(){});
+Route::group(['middleware' => ['auth', RedirectIfNotUser::class]],function(){
+    Route::get('/map', [FrontendController::class, 'map']);
+    Route::get('/profile', [FrontendController::class, 'profile']);
+    Route::get('/properties', [FrontendController::class, 'properties']);
+
+});
 Route::get('/', [FrontendController::class, 'index']);
-Route::get('/map', [FrontendController::class, 'map']);
 Route::get('/details/{id}', [FrontendController::class,'details']);
 Route::get('change_language/{lang}' , [LanguageController::class , 'change']);
-Route::get('/sublite', function () {
-    return view('frontend.submit_property');
-})->name('details');
-Route::get('/details', function () {
-    return view('frontend.details');
-})->name('details');
-Route::get('/login', function () {
-    return view('frontend.auth.login');
-})->name('login');
-Route::get('/register', function () {
-    return view('frontend.auth.signup');
-})->name('signup');
-Route::get('/profile', function () {
-    return view('frontend.customer.profile');
-})->name('pro');
-Route::get('/customer', function () {
-    return view('frontend.customer.properties');
-})->name('property');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
